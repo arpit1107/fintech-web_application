@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>single page application: mean stack</title>
+        <!-- css file of bootstrap-->
+        <base href="/">
+        <link rel="stylesheet" href="libs/materialize/dist/css/materialize.min.css">
+        <link rel="stylesheet" href="libs/animate.css/animate.min.css">
+        <!-- CUSTOM SYLES-->
+        <link rel="stylesheet" href="css/login.css">
+    
+
+        <!-- js file-->
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular-route/angular-route.min.js"></script>
+
+        <!-- Angular custom-->
+        <script src="./js/controllers/Homectrl.js"></script>
+        <script src="./js/controllers/Aboutctrl.js"></script>
+        <script src="./js/controllers/Contactctrl.js"></script>
+        <script src="./js/services/Aboutservices.js"></script>
+        <script src="./js/controllers/Addctrl.js"></script>
+        <script src="./js/controllers/Showctrl.js"></script>
+        <script src="./js/controllers/updatectrl.js"></script>
+        <script src="./js/controllers/deletectrl.js"></script>
+        <script src="./libs/materialize/dist/js/materialize.min.js"></script>
+      
+        <script src="./js/angapp.js"></script>
+        <script src="./js/angapproutes.js"></script>
+    </head>
+    <body ng-app="angularSPA" ng-controller="HomeController" id="body">
+        <div class="container">
+            <!--header-->
+            <nav id="navbar">
+                <div class="nav-wrapper">
+                    <a href="https://www.google.com" class="brand-logo" style="color: black;">Fintech Trainers</a>
+
+                <!--link to our pages-->
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a style="color: black;" href="/home">Home</a></li>
+                    <li><a  style="color: black;" href="/about">About us</a></li>
+                    <li><a style="color: black;" href="/contact">Contact us</a></li>
+                    <li><a style="color: black;" href="/show">show details</a></li>
+                    <li><a style="color: black;" href="/update">Update data</a></li>
+                    <li><a style="color: black;" href="/delete">Delete Data</a></li>
+                    <li><button class="waves-effect waves-light btn" id="addbtn"><a href="/add">login</a></button></li>
+                </ul>
+                </div>
+
+            </nav>
+        <!--Angular Dynamic Content-->
+        <div ng-view></div>
+        
+        </div>
+    </body>
+
+</html>

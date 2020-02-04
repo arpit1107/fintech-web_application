@@ -1,0 +1,52 @@
+
+<div class="row center-align">
+    <form method="POST" ng-submit="validate();" class="col s6 z-depth-2" id="form" ng-model="myForm">
+        <div class="center-align">
+            <h4>login Page</h4>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 center-align">
+                <input type="text" name="Firstname"  ng-model="form_data.first_name" required>
+                <label for="first_name">First Name</label>
+                <span ng-show="myForm.form_data.first_name.$touched && myForm.myName.form_data.first_name.$invalid">
+                <span style="color: red;"ng-show="myForm.form_data.first_name.$touched">firstname is required</span>
+                <span style="color: red;" ng-show="myForm.form_data.first_name.$invalid">please enter the correct Firstname</span>
+                
+                <!--<p>please enter the correct name</p>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 center-align">
+                <input type="text" name="Lastname" required ng-model="form_data.last_name"> 
+                <label for="last_name">Last Name</label>
+                <span ng-show="myForm.form_datal.last_name.$touched && myForm.form_data.last_name.$invalid">
+                <span style="color: red;"ng-show="myForm.form_datal.last_name.$touched">Lastname is required</span>
+                <span style="color: red;" ng-show="myForm.form_datal.last_name.$invalid">please enter the correct Lastname</span>
+                
+                <!--<p>please enter the correct last name</p>-->
+               
+            </div>
+        </div>
+        <div class="row center-align">
+            <div class="input-field col s12">
+                <input type="text" name="phone" required ng-model="form_data.phone">
+                <label for="phoneNomber">phoneNomber</label>
+                <span ng-show="myForm.form_data.phone.$touched && myForm.form_data.phone.$invalid">
+                <span style="color: red;"ng-show="myForm.form_data.phone.$touched">phoneNumber is required</span>
+                <span style="color: red;" ng-show="myForm.form_data.phone.$invalid">please enter the correct phoneNomber</span>
+                
+                <!--<p>please enter the correct phoneNomber</p>-->
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="center-align">
+                <button type="submit" class="waves-effect waves-light btn" id="addbtn">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+    
+      
+      

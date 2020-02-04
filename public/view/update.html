@@ -1,0 +1,29 @@
+<!--this file is used to show data -->
+<div>
+
+    <div class="center-align">
+        <button type="submit" ng-click="retrieve_data();" class="waves-effect waves-light btn" id="addbtn1">Show data to Update Details</button>
+    </br></br>
+
+    </div>
+   
+
+    <table align="center" border=""><!--table start-->
+
+        <tr>
+            <th><h4><b>Firstname</b></h4></th>
+            <th><h4><b>Lastname</b></h4></th>
+            <th><h4><b>Phone</b></h4></th>
+            <th><h4><b>Operation</b></h4></th>
+        </tr>
+
+        <tr ng-repeat="data in receive_data">
+            <!--ng-repeat is used as a loop to retrieve data-->
+            <td>{{data.first_name}}</td>
+            <td>{{data.last_name}}</td>
+            <td>{{data.phone}}</td>
+            <td><button class="waves-effect waves-light btn center-align" id="addbtn"><a ng-href="/update/{{data._id}}">Update</a></button></td>
+
+        </tr>
+    </table>
+</div>

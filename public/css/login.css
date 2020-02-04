@@ -1,0 +1,32 @@
+
+#body{
+    background-image: url('/public/img/home.png');
+    background-size: cover;
+}
+#addbtn{
+    background-color: darkorange;
+    border-radius: 25px;
+    text-align: center;
+}
+#addbtn1{
+    background-color: darkorange;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+#addbtn3{
+    background-color: darkorange;
+    border-radius: 25px;
+    text-align: center;
+}
+#form,#table{
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    background-size: cover;
+}
+#navbar{
+    background-color: none;
+    background: none;
+    box-shadow: none;
+}
